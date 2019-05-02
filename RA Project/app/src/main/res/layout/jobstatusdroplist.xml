@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+
+    android:id="@+id/backid"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/spaceid"
+
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/uparrows"
+        android:scaleType="fitEnd"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:background="@color/colorGy"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@color/nav_font"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/darkleftsearchicon"
+
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Search"
+                android:id="@+id/searchid"
+                android:background="@android:color/transparent"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/verylighgray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:paddingLeft="20dp"
+
+                android:background="@color/nav_font"
+                android:id="@+id/listdrop"
+
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No data available"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:background="@color/nav_font"
+                android:textColor="@color/colorPrimary"
+
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

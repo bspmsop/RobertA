@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/child_tv"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/jobStatusList"
+            />
+        <EditText
+            android:id="@+id/editTextRepairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Repair notes Here"
+            android:maxLines="6"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextRepairs"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/repairText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Repair History"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09-24-2018 11:20 AM"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:id="@+id/repairTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            android:text="Notes for the repairs will display here "
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextRepairs"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/dateTV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09-24-2018 12:30 PM"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            android:textAllCaps="true"
+
+            />
+        <TextView
+            android:id="@+id/repairTV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingLeft="15dp"
+            android:text="Called vendor to come and inspect the boiler "
+            android:textAllCaps="false"
+
+            />
+    </LinearLayout>
+</LinearLayout>

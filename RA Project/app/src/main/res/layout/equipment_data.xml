@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E4E2E3"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/backicon"
+                android:tint="#ffffff"
+
+
+                />
+            <TextView
+                android:id="@+id/tvTitl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Boiler Room"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:layout_marginRight="45dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="50dp"
+      android:orientation="vertical">
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+
+          android:id="@+id/framers">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/textViewAdr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Equipment:"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorFont"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tvEqui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boiler"
+                android:textSize="20dp"
+                android:maxLines="1"
+
+                android:paddingLeft="10dp"
+
+                android:textColor="@color/colorBlack"
+
+                android:layout_gravity="center_horizontal"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewEquip"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textViewBoil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="Model:"
+                android:textColor="@color/colorFont"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/tvModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perless"
+                android:textSize="20dp"
+
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_horizontal"/>
+            <View
+                android:id="@+id/view5"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewEquip"
+
+                android:background="@color/colorBlack" />
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serial#:"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorFont"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/serialnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1000-394A1-0001-78233"
+                android:textSize="20dp"
+
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:layout_gravity="center_horizontal"/>
+            <View
+                android:id="@+id/view6"
+
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewEquip"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.42">
+
+                <ImageView
+                    android:id="@+id/ivDocment"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/doc_icon"/>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:id="@+id/textViewInspect"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+
+
+                     android:text="(0)Documents in Library"
+                     android:textColor="@color/colorFont"
+                     android:maxLines="1"
+                     android:gravity="left"
+                      android:paddingTop="15dp"
+                     android:layout_marginRight="10dp"
+
+
+
+                     android:textSize="20dp"/>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:lines="1"
+    android:background="@android:color/transparent"
+    android:id="@+id/docspinner"
+
+    />
+
+             </RelativeLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGy"></LinearLayout>
+
+        </LinearLayout>
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginTop="5dp"
+             android:background="#FFFFFF">
+
+             <TextView
+                 android:id="@+id/textEquipTest"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="Equipment Test Forms"
+                 android:textSize="20dp"
+                 android:paddingTop="5dp"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:textAlignment="center"
+                 android:layout_gravity="center_horizontal"/>
+             <View
+                 android:id="@+id/view8"
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/textViewEquip"
+                 android:background="@color/colorPrimaryDark" />
+             <TextView
+                 android:id="@+id/tvEffTest"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="Default Boiler Test"
+                 android:textSize="18dp"
+                 android:paddingTop="3dp"
+                 android:paddingBottom="3dp"
+                 android:textAlignment="center"
+                 android:layout_gravity="center_horizontal"/>
+         </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:id="@+id/performefficiencytestlayout"
+
+            >
+
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnScan"
+                android:layout_marginTop="40dp"
+                android:text="Vendor Repair"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/nav_font"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@drawable/scan"
+
+                android:backgroundTint="#22c900"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+
+                android:id="@+id/totlaprofncy"
+                android:layout_marginTop="20dp"
+                android:text="@string/performInspect"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/scan"
+                android:backgroundTint="@color/coloreffieciency"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/performefficiencyBtn"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_font"
+                    android:textAllCaps="false"
+                    android:lines="1"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="Perform Efficiency Test"/>
+                <TextView
+                    android:id="@+id/subperfomtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_font"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:lines="1"
+                    android:layout_marginBottom="10dp"
+
+
+                    android:textSize="13dp"
+                    android:text="Default Inspection Form"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/scan"
+                android:backgroundTint="#c80101"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/nav_font"
+                android:textSize="20dp"
+                android:layout_marginBottom="300dp"/>
+
+
+        </LinearLayout>
+
+            </LinearLayout>
+
+</ScrollView>
+      </FrameLayout>
+  </LinearLayout>
+
+<LinearLayout
+android:id="@+id/footerView"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:layout_alignParentBottom="true"
+android:orientation="vertical"
+android:background="#aeaeae"
+
+android:weightSum="1"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGy"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+<ImageView
+    android:id="@+id/docLibrary"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:src="@drawable/note"
+    android:layout_weight="0.50"/>
+<View
+    android:layout_width="1dp"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" />
+<ImageView
+    android:id="@+id/vendRepaire"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+      android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:src="@drawable/buildprofile"
+    android:layout_weight="0.50"/>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

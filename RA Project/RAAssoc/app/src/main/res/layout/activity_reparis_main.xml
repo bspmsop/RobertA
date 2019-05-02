@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:padding="5dp" >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <include
+                    layout="@layout/activity_repairsmain"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <ExpandableListView
+            android:id="@+id/expandLV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
+            android:dividerHeight="1dp" >
+        </ExpandableListView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="522dp"
+            android:background="#aeaeae"
+            android:orientation="horizontal"
+            android:layout_weight="0.28"
+            android:weightSum="1">
+                <ImageView
+                    android:id="@+id/docLibr"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="60dp"
+                    android:src="@drawable/note"
+                    android:layout_weight="0.77"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFF" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorReg"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/buildprofile"/>
+        </LinearLayout>
+</LinearLayout>

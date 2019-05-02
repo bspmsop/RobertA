@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E2E3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+
+
+
+                android:id="@+id/btnback"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/backicon"
+                android:tint="#ffffff"
+
+                />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Vendor Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewVendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vendor Repair Summary"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="true"
+                android:textColor="@color/navcolor_bg"
+                android:layout_gravity="center_horizontal"/>
+            <EditText
+                android:id="@+id/tvVenName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vendor Name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+
+                android:textSize="19sp"
+                android:textColor="@color/colorAccent"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_gravity="center_horizontal"/>
+            <Spinner
+                android:id="@+id/spinJobStatus"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:drawSelectorOnTop="true"
+
+                android:entries="@array/jobStatusList">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/textViewAdr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repair Details"
+                android:textSize="15dp"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter repair notes here"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="20dp" />
+            <EditText
+                android:id="@+id/etRepair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:gravity="top"
+
+
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"
+                android:backgroundTint="@android:color/darker_gray"
+
+                android:layout_weight="0.85"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.25"
+            >
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignStart="@+id/btnLogout"
+        android:layout_alignLeft="@+id/btnLogout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/scan"
+        android:backgroundTint="#22c900"
+        android:text="Save and Close"
+        android:textAllCaps="false"
+        android:textColor="@color/nav_font"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="81dp"
+        android:background="@drawable/scan"
+        android:backgroundTint="#c80101"
+        android:text="Cancel"
+        android:textColor="@color/nav_font"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>

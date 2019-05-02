@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/et_edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/bt_btnSubmit"
+            android:background="@drawable/rounded_rectangle"
+            android:hint="Enter Name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/bt_btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_rectangle"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listViewNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_name"></ListView>
+</RelativeLayout>

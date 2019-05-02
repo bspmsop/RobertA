@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/vendorIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vendor_repair"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Boiler #1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:text="Repair Scheduled    09-24-2018 12:30 PM"
+            android:textColor="#000000"/>
+    </LinearLayout>
+</LinearLayout>

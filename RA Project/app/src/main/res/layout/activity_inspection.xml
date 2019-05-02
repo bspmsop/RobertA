@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E4E2E3">
+        <LinearLayout
+            android:id="@+id/lmLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHead"
+                android:text="TESTING"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnSaveD"
+                android:layout_marginTop="20dp"
+                android:text="Save and Close"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/nav_font"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@drawable/scan"
+                android:backgroundTint="#22c900"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnLogoutD"
+                android:layout_marginTop="20dp"
+                android:text="Cancel"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/nav_font"
+                android:textSize="20dp"
+                android:background="@drawable/scan"
+                android:backgroundTint="#c80101"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/lmDefaLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewAdr1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tekmar Controls"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/textViewAddr2"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="OutDoor Temperature"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextSupply"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Boiler Supply Temperature"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTempTarget"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Target Temperature"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:id="@+id/textViewInspect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Bldg System Pump"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editPump"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Pump #1 or #2 Operating"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editPumpoff"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Pump Off"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Failure Lights Flashing"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cleared Lights Flasing"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes1"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo1"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pressed Clear Alarm ?"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes2"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo2"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:id="@+id/textViewDHM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="DHM Pump Sequencer"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pump #1 or #2 Operating"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes3"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo3"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Failure Lights Flashing"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes4"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo4"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cleared Flashing Lights"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes5"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+
+                        <RadioButton
+                            android:id="@+id/radioNo5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pressed Clear Alarm?"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes6"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo6"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:id="@+id/textViewDHMHeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="DHM Heater"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextWater"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Water gauges temperature"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/textViewTherm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Thermometer Readings"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/editTextSuplyTemp"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Supply Temp"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextReturn"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Return Temp"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextDHW"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="DHW Supply Temp After .."
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:id="@+id/textViewWarn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Warning Indicators Visual C..."
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Boiler 1"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes7"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo7"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Boiler 2"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes8"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo8"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Boiler 3"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes9"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo9"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Boiler 4"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp">
+                        <RadioButton android:id="@+id/radioyes10"
+                                     android:layout_marginLeft="10dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="Yes"/>
+                        <RadioButton android:id="@+id/radioNo10"
+                                     android:layout_marginLeft="60dp"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:onClick="onRadioButtonClicked"
+                                     android:text="No"/>
+                    </RadioGroup>
+                    <TextView
+                        android:id="@+id/textViwDaily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Daily/Monnthly/Annual"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextCheckFilt"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" Check filters 1 x Month"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextCheckWater"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" Check water level"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextLeaks"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Check for leaks"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/editTextEfficiency"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Annual Efficiency Test"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingLeft="25dp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/buttonS"
+                android:background="#E4E2E3"
+                android:visibility="visible">
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnSave"
+                    android:layout_marginTop="20dp"
+                    android:text="Save and Close"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_font"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:background="@drawable/scan"
+                    android:backgroundTint="#22c900"/>
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btnLogout"
+                    android:layout_marginTop="20dp"
+                    android:text="Cancel"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/nav_font"
+                    android:textSize="20dp"
+                    android:background="@drawable/scan"
+                    android:backgroundTint="#c80101"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView> -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E2E3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/backicon"
+                android:tint="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text=" Inspection "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="50dp"
+
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">RAAssoc</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="spinner_title">Select Job Type</string>
+
+    <string-array name="jobStatusList">
+        <item> Job Status</item>
+        <item>Inspection Required</item>
+        <item>In progress</item>
+        <item>Waiting on parts</item>
+        <item>Repair Scheduled</item>
+        <item>Complete</item>
+        <item>On Hold/Cancelled</item>
+    </string-array>
+
+    <string name="performInspect">
+        <font size="20">Perform Inspection</font>\n
+        <font size="13">Default Inspection Form</font>
+    </string>
+
+    <string name="performEffTest">
+        <font size="20">Perform Effciency Test</font>\n
+        <font size="13">Standard Efficiency Test Form</font>
+    </string>
+    <string name="title_activity_supersync_actvity">SupersyncActvity</string>
+
+</resources>

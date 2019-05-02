@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="30dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/translate"/>
+    <TextView
+        android:id="@+id/usernametxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/nav_font"
+android:maxLines="1"
+       android:paddingTop="8dp"
+       android:text="John PeterThomson"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/useremailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/nav_font"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLines="1"
+        android:text="peterthomas@gmail.com"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"/>
+</LinearLayout>

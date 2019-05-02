@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E4E2E3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:src="@drawable/backicon"
+                android:tint="#ffffff"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Document Library"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAdr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Boiler Room"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19dp"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewAddr2"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search Documents"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimaryDark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+
+                    android:src="@drawable/bliler_room_note"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Boiler Parts List"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"/>
+
+                    <TextView
+                        android:id="@+id/date1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="8dp"
+                        android:text="part.pdf  07-20-2018"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/bliler_room_note"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Boiler Repair Video"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"/>
+                    <TextView
+                        android:id="@+id/date2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="8dp"
+                        android:text="repair.mp4  01-01-2018"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/bliler_room_note"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Mixing Value Test Video"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="19sp"/>
+                    <TextView
+                        android:id="@+id/date3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="8dp"
+                        android:text="test_video.mp4  09-10-2017"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:background="#aeaeae"
+            android:orientation="horizontal"
+            android:layout_weight="0.28"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/docLibr"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="60dp"
+                android:src="@drawable/note"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="0.77"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF" />
+            <ImageView
+                android:id="@+id/vendRepr"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:src="@drawable/buildprofile"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

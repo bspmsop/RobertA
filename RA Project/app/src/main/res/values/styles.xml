@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">#000000</item>
+        <item name="android:title">"Building"</item>
+        <item name="android:text">"Building"</item>
+
+
+    </style>
+
+
+    <style name="NavigateFontSize">
+        <item name="android:textSize">16sp</item> <!-- menu item text size-->
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemes" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppThemes.noactionbar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+
+
+
+        <style name="Customdmax" parent="android:Theme.DeviceDefault.Dialog">
+            <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+            <item name="DialogTitleText">Updating…</item>
+            <item name="DialogSpotColor">@color/colorLog</item>
+            <item name="DialogSpotCount">4</item>
+        </style>
+
+
+    <style name="MyRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/app_logo</item>
+    </style>
+
+
+
+</resources>
